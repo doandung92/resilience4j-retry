@@ -1,0 +1,9 @@
+resilience4j.retry:
+  instances:
+    backendA:
+      maxAttempts: 3
+      waitDuration: 2s
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 3
+      retryExceptions:
+      ignoreExceptions:
